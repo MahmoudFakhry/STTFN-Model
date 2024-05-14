@@ -3,9 +3,9 @@
 **The Licensed Material has been given permission to be shared in read-only format on Github.**
 
 
-**COPYRIGHT constellr GmbH © 2024
+**COPYRIGHT constellr GmbH © 2024**
 
-Contributors: Todd Goldfarb, Joseph Balaty, Jarod Lokrantz, Mahmoud Fahkry**
+**Contributors: Todd Goldfarb, Joseph Balaty, Jarod Lokrantz, Mahmoud Fahkry**
 
 **1. Definitions**
 
