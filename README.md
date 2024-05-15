@@ -1,4 +1,4 @@
-# Spatiotemporal Fusion Network & StarFM
+# Spatiotemporal Temperature Fusion Network & StarFM
 ### Using machine learning to turn unreadable or missing satellite images into usable and rich data.
 
 ![image](https://github.com/Todd-C-Goldfarb/STTFN-OSU/assets/132838573/9f5d6f1d-3323-42ad-8854-05959b15420c)
@@ -9,13 +9,13 @@ This repository, and it's contents, are the result of the 2023-2024 STTFN Senior
 
 This repository has a strict license to ensure read-only rights, for educational and research purposes. Check the LICENSE.md for more.
 
-# What is a Spatiotemporal Fusion Network? (STTFN)
+# What is a Spatiotemporal Temperature Fusion Network? (STTFN)
 
 _Our implementation is based on the works of Zhixianh Yin, Penghai Wu, and Giles M. Foody in "Spatiotemporal Fusion of Land Surface Temperature Based on a Convolutional Neural Network"_
 
 The specific research paper, including the model architecture, can be found here: https://ieeexplore.ieee.org/document/9115890
 
-A Spatiotemporal Fusion Network is a multiscale fusion-based convolutional neural network utilized to build nonlinear relationships between input and output images -- in this case, Land Surface Temperature (LST) satellite imaging. By utilizing two convolutional neural networks to predict a forward sequence and a backward sequence, we can predict a "middle" sequence, filling in possible missing or damaged LST satellite imaging.
+A Spatiotemporal Temperature Fusion Network (STTFN) is a multiscale fusion-based convolutional neural network utilized to build nonlinear relationships between input and output images -- in this case, Land Surface Temperature (LST) satellite imaging. By utilizing two convolutional neural networks to predict a forward sequence and a backward sequence, we can predict a "middle" sequence, filling in possible missing or damaged LST satellite imaging.
 
 In remote sensing, MODIS satellite data is considered lower resolution, but common -- while Landsat satellite data is higher resolution, but rarer. Utilizing this STTFN method, we aim to use the context of surrounding Landsat and MODIS imagery to infer Landsat-quality imaging for days where there would typically be none. For later descriptions in this document, Landsat imagery will be referred to as L# (with the # dictating the timestamp in relation to the prediction image), and MODIS will be referred to as M#, with the same rules.
 
@@ -42,7 +42,7 @@ _The "Goal" Landsat (Notice the similarity, and how the Model Output ignores the
 
 # The Underlying Architecture
 
-The general architecture of the Spatiotemporal Fusion Network consists of three primary factors:
+The general architecture of the Spatiotemporal Temperature Fusion Network consists of three primary factors:
 
 1. A trained forward convolutional neural network.
 2. A trained backward convolutional neural network.
@@ -86,6 +86,12 @@ The first formula is calculates the weight parameter for each CNN output. Essent
 
 The second formula, which then produces the final STTFN output prediction, uses the calculated weight parameters to find the most accurate estimation of the combined CNN outputs. 
 
+# STARFM: What is it?
+
+StarFM is an established baseline model we are comparing STTFN’s performance with in terms of  RMSE and SSIM. The model functions the same as the model listed in the original repo (https://github.com/nmileva/starfm4py), including use of the same parameters’ values.
+
+For testing, we put the StarFM model inside a class to substantiate instances and make the model’s parameters part of its class.
+
 # Using the .ipnyb
 
 We encourage anyone looking to try out the .ipnyb file, though if you don't have access to University-level HPC Clusters, then the L4 GPU on the Google Colab should work just fine for this purpose.
@@ -93,6 +99,9 @@ We encourage anyone looking to try out the .ipnyb file, though if you don't have
 Provide a named area of interest compatible with the Microsoft Planetary Computer connectors, and test your area of interest.
 
 We have provided example areas of interest, named within the repository.
+
+For the StarFM, you can change the TEST_POINT global variable in Imports to a different Test Data Point to test with. If TEST_POINT is >= the number of datapoints available, it defaults to the last data point available in trainingDataSet (check StarFM Test Run). Model outputs, including RMSE and SSIM are displayed in Testing Results.
+
 
 ## Contacts
 If you have any questions, or struggle with the code, please feel free to contact us at any of the emails below or create a Github Issue, which we will look to resolve.
