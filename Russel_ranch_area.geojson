@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Russel_ranch_area",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -121.878600552531324, 38.545873410000304 ], [ -121.871178891677758, 38.547803707442036 ], [ -121.868682817399659, 38.539716426780977 ], [ -121.878301023617951, 38.539583302819473 ], [ -121.878600552531324, 38.545873410000304 ] ] ] ] } }
+]
+}
