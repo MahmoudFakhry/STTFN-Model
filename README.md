@@ -3,13 +3,13 @@ If you have any questions, or struggle with the code, please feel free to contac
 
 Team Members:
 
+Mahmoud Fahkry (fakhryk@oregonstate.edu)
+
 Todd Goldfarb (tcgoldfarb@gmail.com)
 
 Joseph Balaty (balatyj@oregonstate.edu)
 
 Jarod Lokrantz (lokrantj@oregonstate.edu)
-
-Mahmoud Fahkry (fakhryk@oregonstate.edu)
 
 # Spatiotemporal Temperature Fusion Network & StarFM
 ### Using machine learning to turn unreadable or missing satellite images into usable and rich data.
