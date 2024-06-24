@@ -1,3 +1,16 @@
+## Contacts
+If you have any questions, or struggle with the code, please feel free to contact us at any of the emails below or create a Github Issue, which we will look to resolve.
+
+Team Members:
+
+Todd Goldfarb (tcgoldfarb@gmail.com)
+
+Joseph Balaty (balatyj@oregonstate.edu)
+
+Jarod Lokrantz (lokrantj@oregonstate.edu)
+
+Mahmoud Fahkry (fakhryk@oregonstate.edu)
+
 # Spatiotemporal Temperature Fusion Network & StarFM
 ### Using machine learning to turn unreadable or missing satellite images into usable and rich data.
 
@@ -102,20 +115,4 @@ We have provided example areas of interest, named within the repository.
 
 For the StarFM, you can change the TEST_POINT global variable in Imports to a different Test Data Point to test with. If TEST_POINT is >= the number of datapoints available, it defaults to the last data point available in trainingDataSet (check StarFM Test Run). Model outputs, including RMSE and SSIM are displayed in Testing Results.
 
-
-## Contacts
-If you have any questions, or struggle with the code, please feel free to contact us at any of the emails below or create a Github Issue, which we will look to resolve.
-
-Team Members:
-
-Todd Goldfarb (tcgoldfarb@gmail.com)
-
-Joseph Balaty (balatyj@oregonstate.edu)
-
-Jarod Lokrantz (lokrantj@oregonstate.edu)
-
-Mahmoud Fahkry (fakhryk@oregonstate.edu)
-
-Link to the Repository (if you are on pages): https://github.com/Todd-C-Goldfarb/STTFN-OSU
-
-
+Link to the Repository (if you are on pages): https://github.com/MahmoudFakhry/STTFN-Model
