@@ -32,8 +32,8 @@ A Spatiotemporal Temperature Fusion Network (STTFN) is a multiscale fusion-based
 
 In remote sensing, MODIS satellite data is considered lower resolution, but common -- while Landsat satellite data is higher resolution, but rarer. Utilizing this STTFN method, we aim to use the context of surrounding Landsat and MODIS imagery to infer Landsat-quality imaging for days where there would typically be none. For later descriptions in this document, Landsat imagery will be referred to as L# (with the # dictating the timestamp in relation to the prediction image), and MODIS will be referred to as M#, with the same rules.
 
-We implemented the STTFN research paper, which is provided in the .ipnyb file, and trained on Oregon State University's HPC Clusters. For performance metrics, we used Root Mean Squared Error (RMSE) and Structural Similarity (SSIM).
-The .ipnyb file also includes an implementation of a "comparison model", the STARFM model (original implementation and repository can be found at https://github.com/nmileva/starfm4py).
+We implemented the STTFN research paper, which is provided in the .ipynb file, and trained on Oregon State University's HPC Clusters. For performance metrics, we used Root Mean Squared Error (RMSE) and Structural Similarity (SSIM).
+The .ipynb file also includes an implementation of a "comparison model", the STARFM model (original implementation and repository can be found at https://github.com/nmileva/starfm4py).
 
 _An example of our implemented STTFN results can be seen below._
 
@@ -105,9 +105,9 @@ StarFM is an established baseline model we are comparing STTFN’s performance w
 
 For testing, we put the StarFM model inside a class to substantiate instances and make the model’s parameters part of its class.
 
-# Using the .ipnyb
+# Using the .ipynb
 
-We encourage anyone looking to try out the .ipnyb file, though if you don't have access to University-level HPC Clusters, then the L4 GPU on the Google Colab should work just fine for this purpose.
+We encourage anyone looking to try out the .ipynb file, though if you don't have access to University-level HPC Clusters, then the L4 GPU on the Google Colab should work just fine for this purpose.
 
 Provide a named area of interest compatible with the Microsoft Planetary Computer connectors, and test your area of interest.
 
